@@ -1,0 +1,431 @@
+<!doctype html>
+<title>Tailwind Testing</title>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-screen-xl mx-auto mt-4 rounded-lg p-8" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+        <div class="flex flex-col">
+            <h2 class="text-left font-medium"></h2>
+            <input type="date"  id="dateF1" name="Date_F1"  class="border border-gray-300 text-gray-900 text-sm bg-[#fff] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[500px] p-[11px] outline-none" style="margin-bottom: 10px;">
+            <h1 class="text-left font-medium">Fishing Boat</h1>
+            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+                  <table
+                    class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                    <thead class="border-b font-medium dark:border-neutral-500">
+                      <tr>
+                        <th
+                          scope="col"
+                          class="border-r px-6 py-4 dark:border-neutral-500">
+                          DESCRIPTION
+                        </th>
+                        <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500"> E-2 </th>
+                        <th
+                          scope="col"
+                          class="border-r px-6 py-4 dark:border-neutral-500">
+                          NO NUMBERS
+                        </th>
+                        <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">V-1</th>
+                        <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">V-5</th>
+                        <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">TOTAL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b dark:border-neutral-500">
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                          TOTAL BOAT 
+                        </td>
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="tbE2" name='Tb_E2' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="tbN" name='Tb_N' class="border rounded p-2 w-full"></td>
+        
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number" id="tbV1" name='Tb_V1' class="border rounded p-2 w-full"></td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number" id="tbV5" name='Tb_v5' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input readonly type="number" id="tbTo" name='Tb_To' class="border rounded p-2 w-full"></td>
+                        </td>
+                      </tr>
+                      <tr class="border-b dark:border-neutral-500">
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                          NO. OF BOATS SAILED
+                        </td>
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number"  id="nobsE2" name='Nobs_E2' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="nobsN" name='Nobs_N' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number"  id="nobsV1" name='Nobs_V1' class="border rounded p-2 w-full"></td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number"  id="nobsV5" name='Nobs_V5' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input readonly type="number"  id="nobsTo" name='nobs_To' class="border rounded p-2 w-full"></td>
+                        </td>
+                      </tr>
+                      
+                      <tr class="border-b dark:border-neutral-500">
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                          NO.OF BOATS ARRIVED
+                        </td>
+                        <td
+                          
+                          class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number"  id="nobaE2" name='Noba_E2' class="border rounded p-2 w-full">
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number"  id="nobaN" name='Noba_N' class="border rounded p-2 w-full"></td></td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number"  id="nobaV1" name='Noba_V1' class="border rounded p-2 w-full">
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number"  id="nobaV5" name='Noba_V5' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input readonly type="number" id="nobaTo" name='Noba_To' class="border rounded p-2 w-full"></td>
+                        </td>
+                      </tr>
+                      <tr class="border-b dark:border-neutral-500">
+                        <td
+                          class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                          GRAND TOTAL OF BOATS PRESENT
+                        </td>
+                        <td colspan="1" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input readonly type="number"  id="gtobE2" name='Gtob_E2' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input readonly type="number"  id="gtobN" name='Gtob_N' class="border rounded p-2 w-full"></td></td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input readonly type="number"  id="gtobV1" name='Gtob_V1' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input readonly type="number"  id="gtobV5" name='Gtob_V5' class="border rounded p-2 w-full"></td>
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input readonly type="number"  id="gtobTo" name='Gtob_To' class="border rounded p-2 w-full"></td>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" onclick="totalBoat()" class="bg-blue-500 text-white px-3 py-1 rounded-lg" style="margin-left: 5px;">
+          Calculate Total
+          </button>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto mt-4 rounded-lg p-8" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+      <div class="flex flex-col">
+        <h2 class="text-left font-medium"></h2>
+        <input type="date" id="dateF2" name="Date_F2" class="border border-gray-300 text-gray-900 text-sm bg-[#fff] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[500px] p-[11px] outline-none" style="margin-bottom: 10px;">
+          <h1 class="text-left font-medium">FISHING TRAWLERS</h1>
+          <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
+                    <tr>
+                      <th rowspan="2" scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        DESCRIPTION
+                      </th>
+                      <th scope='col' colspan=2 class="border-r px-6 py-4 dark:border-neutral-500">
+                        TRAWLERS
+                      </th>
+                      <th scope="col" colspan=4 class="border-r px-6 py-4 dark:border-neutral-500">
+                        BIG/ MINI DETAILS
+                      </th>
+                      
+                    </tr>
+                    <tr class="border-t dark:border-neutral-500">
+                      <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        BIG
+                      </th>
+                      <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        MINI
+                      </th>
+                      <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        OTHERS
+                      </th>
+                      <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        SURVEY
+                      </th>
+                      <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        OTHERS SUNKEN
+                      </th>
+                      <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                        SUNKEN
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        TOTAL TRAWLERS
+                      </td>
+                      <td scope="col" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="ttTb" name='Tt_Tb' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="ttTm" name='Tt_Tm' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="ttBo" name='Tt_Bo'  class="border rounded p-2 w-full"></td>
+                      <td colspan="1" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number"  id="ttBs" name='Tt_Bs'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="ttBos" name='Tt_Bos'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number"  id="ttBms" name='Tt_Bms'  class="border rounded p-2 w-full"></td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        NO. OF TRAWLERS SAILED
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="ntsTb" name='Nts_Tb' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="ntsTm" name='Nts_Tm' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="ntsBo" name='Nts_Bo'  class="border rounded p-2 w-full"></td>
+                      <td colspan="1" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number"  id="ntsBs" name='Nts_Bs' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number" id="ntsBos" name='Nts_Bos'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                            <input type="number"  id="ntsBms" name='Nts_Bms'  class="border rounded p-2 w-full"></td>
+                    </tr>
+                    
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                      NO. OF TRAWLERS ARRIVED
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number" id="ntaTb" name='Nta_Tb'  class="border rounded p-2 w-full">
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number" id="ntaTm" name='Nta_Tm'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input type="number" id="ntaBo" name='Nta_Bo'  class="border rounded p-2 w-full">
+                      </td>
+                      <td colspan="1" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="ntaBs" name='Nta_Bs' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number" id="ntaBos" name='Nta_Bos'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number" id="ntaBms" name='Nta_Bms'   class="border rounded p-2 w-full"></td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        TOTAL NO.OF TRAWLERS PRESENT
+                      </td>
+                      <td colspan="1" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input readonly type="number"  id="ttpTb" name='Ttp_Tb'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number" id="ttpTm" name='Ttp_Tm'  class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input readonly type="number"  id="ttpBo" name='Ttp_Bo'  class="border rounded p-2 w-full"></td>  
+                      <td colspan="1" class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input readonly type="number"  id="ttpBs" name='Ttp_Bs' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input readonly type="number"  id="ttpBos" name='Ttp_Bos' class="border rounded p-2 w-full"></td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                          <input readonly type="number"  id="ttpBms" name='Ttp_Bms'  class="border rounded p-2 w-full"></td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" onclick="" class="bg-blue-500 text-white px-3 py-1 rounded-lg" style="margin-left: 5px;">
+          Calculate Total
+          </button>
+  </div>
+
+  <div class="max-w-screen-xl mx-auto mt-4 rounded-lg p-8" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+    <div class="flex flex-col">
+      <h2 class="text-left font-medium">DAILY COLLECTION POSITION </h2>
+      <input type="date"  id="dateD" name='Date_D' class="border border-gray-300 text-gray-900 text-sm bg-[#fff] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[500px] p-[11px] outline-none" style="margin-bottom: 10px;">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                <thead class="border-b font-medium dark:border-neutral-500">
+                  <tr>
+                    <th 
+                    rowspan="3"
+                    scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                      DESCRIPTION
+                    </th>
+                    <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                      <input type="number" id="dateTb" name='Date_Tb'  class="border rounded p-2 w-full"></td>
+
+                    </th>
+                    <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                      <input type="number" id="dateTb1" name='Date_Tb1'  class="border rounded p-2 w-full"></td>
+
+                    </th>
+                    <th 
+                    colspan="3"
+                    scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                      M F BOATS</th>
+                    
+                  </tr>
+                  <tr>
+                    <th rowspan="2"
+                    scope="col" class="border-t border-r px-6 py-4 dark:border-neutral-500">
+                      CURRENT YEAR
+                    </th>
+                    <th rowspan="2"
+                    scope="col" class="border-r border-t px-6 py-4 dark:border-neutral-500">
+                      PREVIOUS YEAR
+                    </th>
+                    <th rowspan="2"
+                    scope="col" class="border-r border-t px-6 py-4 dark:border-neutral-500">
+                      DIFFERENCE
+                    </th>
+                    <th rowspan="1"  colspan="2"
+                    scope="col" class="border-r border-t border-b px-6 py-4 dark:border-neutral-500">
+                      BOXES
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="border-r dark:border-neutral-500">
+                      TODAY
+                    </th>
+                    <th>
+                      YEARLY UPDATE
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b dark:border-neutral-500">
+                    <td class="whitespace-wrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                      TOTAL BOATS DAY COLLECTION (CUMULATIVE)
+                    </td>
+                    <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <input type="number" id="tbdC" name='Tbd_C'  class="border rounded p-2 w-full"></td>
+                    
+                    <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <input type="number" id="tbdC2" name='Tbd_C2'  class="border rounded p-2 w-full"></td>
+    
+                    
+                    <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input readonly type="number" id="tbdc3" name='Tbd_C3'  class="border rounded p-2 w-full"></td>
+                    <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="tbdC4" name='Tbd_C4'  class="border rounded p-2 w-full"></td>
+                        
+                    <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        <input type="number"  id="tbdC5" name='Tbd_C5' class="border rounded p-2 w-full"></td>
+                </tr>
+                <tr class="border-b dark:border-neutral-500">
+                  <td class="whitespace-wrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    TOTAL BOATS MONTHLY COLLECTION (CUMULATIVE) 
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <input type="number" id="tbmC" name='Tbm_C'  class="border rounded p-2 w-full"></td>
+                  
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <input type="number" id="tbmC1" name='Tbm_C1'  class="border rounded p-2 w-full"></td>
+  
+                  
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <input readonly type="number" id="tbmC2" name='Tbm_C2'  class="border rounded p-2 w-full"></td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <input type="number"  id="tbmC3" name='Tbm_C3'  class="border rounded p-2 w-full"></td>
+                      
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <input type="number"  id="tbmC4" name='Tbm_C4' class="border rounded p-2 w-full"></td>
+              </tr>
+              <tr class="border-b dark:border-neutral-500">
+                <td class="whitespace-wrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                  TOTAL BOATS YEAR COLLECTION (CUMULATIVE)
+                </td>
+                <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                  <input type="number" id="dTb2" name='D_Tb2'  class="border rounded p-2 w-full"></td>
+                
+                <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                  <input type="number" id="deTb22" name='De_Tb22'  class="border rounded p-2 w-full"></td>
+
+                
+                <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <input readonly type="number" id="ttD2" name='Tt_D2'  class="border rounded p-2 w-full"></td>
+                <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <input type="number"  id="ttBt2" name='Tt_Bt2'  class="border rounded p-2 w-full"></td>
+                    
+                <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <input type="number"  id="ttBy2" name='Tt_By2' class="border rounded p-2 w-full"></td>
+            </tr>
+            <tr class="border-b dark:border-neutral-500">
+              <td class="whitespace-wrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                ICE BOX COLLECTION
+              </td>
+              <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                <input type="number" id="dTb23" name='D_Tb23'  class="border rounded p-2 w-full"></td>
+              
+              <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                <input type="number" id="deTb224" name='De_Tb224'  class="border rounded p-2 w-full"></td>
+
+              
+              <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                  <input readonly type="number" id="ttD25" name='Tt_D25'  class="border rounded p-2 w-full"></td>
+              <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                  <input type="number"  id="ttBt26" name='Tt_Bt26'  class="border rounded p-2 w-full"></td>
+                  
+              <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                  <input type="number"  id="ttBy27" name='Tt_By27' class="border rounded p-2 w-full"></td>
+          </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" onclick="" class="bg-blue-500 text-white px-3 py-1 rounded-lg" style="margin-left: 5px;">
+        Calculate Total
+        </button>
+</div>
+<div class="max-w-screen-xl mx-auto mt-4 rounded-lg p-8 bg-green-100" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+  <div class="flex flex-col">
+    <button>Submit</button>
+  </div>
+ 
+    <script>
+      function totalBoat() {
+          var TotalBoatsE2 = parseInt(document.getElementById("tbE2").value);
+          var TotalBoatsN = parseInt(document.getElementById("nobsE2").value);
+          var TotalBoatsV1 = parseInt(document.getElementById("nobaE2").value);
+          
+          
+          TotalBoatsE2 = isNaN(TotalBoatsE2) ? 0 : TotalBoatsE2;
+          TotalBoatsN = isNaN(TotalBoatsN) ? 0 : TotalBoatsN;
+          TotalBoatsV1 = isNaN(TotalBoatsV1) ? 0 : TotalBoatsV1;
+    
+          var TotalBoats = TotalBoatsE2 + TotalBoatsN + TotalBoatsV1  ;
+          
+          document.getElementById("gtobE2").value = TotalBoats;
+        }
+    
+    </script>
+
+</body>
+</html>
